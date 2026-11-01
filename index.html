@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BD Best Game</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#10172a;
+ color:white;
+}
+header{
+ background:#087f5b;
+ padding:22px;
+ text-align:center;
+ font-size:25px;
+ font-weight:bold;
+}
+.balance{
+ background:#202d48;
+ margin:15px;
+ padding:20px;
+ border-radius:15px;
+ text-align:center;
+}
+.balance h2{color:#ffd43b}
+.container{padding:15px}
+.game{
+ background:#202d48;
+ border-radius:15px;
+ padding:15px;
+ margin-bottom:15px;
+ text-align:center;
+}
+.game .pic{font-size:65px}
+button{
+ background:#00b894;
+ color:white;
+ border:0;
+ padding:12px 25px;
+ border-radius:9px;
+ font-size:16px;
+ font-weight:bold;
+}
+button:active{background:#087f5b}
+footer{
+ text-align:center;
+ padding:20px;
+ color:#aaa;
+}
+</style>
+</head>
+<body>
+
+<header>🎮 BD BEST GAME</header>
+
+<div class="balance">
+<h2>🪙 আমার কয়েন</h2>
+<h1 id="coins">500</h1>
+<p>স্বাগতম BD Best Game-এ!</p>
+</div>
+
+<div class="container">
+
+<div class="game">
+<div class="pic">🎯</div>
+<h2>Target Game</h2>
+<p>মজার টার্গেট গেম</p>
+<button onclick="play()">খেলুন</button>
+</div>
+
+<div class="game">
+<div class="pic">🧩</div>
+<h2>Puzzle Game</h2>
+<p>বুদ্ধির খেলা</p>
+<button onclick="alert('Puzzle Game শীঘ্রই আসছে!')">খেলুন</button>
+</div>
+
+<div class="game">
+<div class="pic">🚗</div>
+<h2>Car Game</h2>
+<p>রেসিং গেম</p>
+<button onclick="alert('Car Game শীঘ্রই আসছে!')">খেলুন</button>
+</div>
+
+</div>
+
+<footer>
+© 2026 BD BEST GAME
+</footer>
+
+<script>
+let coins=500;
+
+function play(){
+ if(coins>=10){
+  coins-=10;
+  document.getElementById("coins").innerText=coins;
+  alert("আপনি Target Game শুরু করেছেন!");
+ }else{
+  alert("পর্যাপ্ত কয়েন নেই!");
+ }
+}
+</script>
+
+</body>
+</html>
