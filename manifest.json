@@ -1,0 +1,12 @@
+{
+  "id": "./",
+  "name": "BD Best Game",
+  "short_name": "BD Best",
+  "description": "BD Best Game - Fun Games for Everyone",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#087f5b"
+}
